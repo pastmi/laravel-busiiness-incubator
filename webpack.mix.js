@@ -14,5 +14,5 @@ const mix = require('laravel-mix');
 mix.js('resources/assets/scripts/app.js', 'public/js')
    .sass('resources/assets/styles/index.scss', 'public/css');
 mix.styles([
-    'vendor/keen-ui/keen-ui.css'
+    'node_modules/keen-ui/dist/keen-ui.css'
     ], 'public/css/vendor.css');
