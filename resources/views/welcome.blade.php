@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>BusinessIncubator</title>
-        {{--<link rel="stylesheet" href="{{asset('styles/index.css')}}">--}}
+        <link href="{{ mix('css/index.css') }}" rel="stylesheet">
+        <link href="{{ mix('css/vendor.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     </head>
@@ -17,6 +19,6 @@
         window.SERVER_URL = '@@gulpServerUrl';
         window.VERSION = '@@gulpVersion';
     </script>
-    <script rel="preload" src="{{asset('js/app.js')}}"></script>
+    <script rel="preload" src="{{mix('js/app.js')}}"></script>
     </body>
 </html>
